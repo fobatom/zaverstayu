@@ -365,14 +365,53 @@
          url('../fonts/montserrat-v25-cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  body {
-     font-family:  'Montserrat', sans-serif;
-     color: #533738;
-  }
 
-  html {
+  element.style {
+}
+
+.promo__text {
+    margin: 0 0 21px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.page {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    min-height: 100vh;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--brown);
+    background-color: var(--main-color);
+}
+
+html {
      box-sizing: border-box;
-   }
+}
+
+.header {
+     min-height: 715px;
+     padding-top: 36px;
+     background-image: url(../img/promo-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+a {
+     text-decoration: none;
+}
 
    nav a, .header__logo a, .phone a {
      font-family: 'Montserrat';
@@ -434,4 +473,32 @@ list-style-type: none;
 
  .promo__content {
      max-width: 534px;
+ }
+
+ .promo__text {
+     margin: 0 0 21px;
+     max-width: 439px;
+     
+ }
+
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .container--small {
+     max-width: 1036px;
+ }
+
+ .button {
+     display: inline-block;
+     padding: 25px 66px 24px 68px;
+     font-size: 20px;
+     line-height: 24px;
+     font-weight: 500;
+     color: #533738;
+     background-color: #CC8B86;
+     border: none;
+     transition: 0.3s;
+     cursor: pointer;
  }
