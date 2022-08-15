@@ -7,35 +7,50 @@
     <title>Scandi</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="page">
         <header class="header">
-            <div>
-                <div class="header__logo">
-                    <a href="/">
-                        <img src="./img/logo.png" alt="Логотип">
-                    </a>
-                    <p>SCANDI</p>
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo__link">
+                        <a href="/">
+                            <img class="logo__img" src="./img/logo.png" alt="Логотип">
+                        </a>
+                        <p class="logo__text">Scandi</p>
+                    </div>
                 </div>
-                    <nav>
-                       <ul>
-                        <li><a href="" class="">О компании</a></li>
-                        <li><a href="" class="">Портфолио</a></li>
-                        <li><a href="" class="">Команда</a></li>
-                        <li><a href="" class="">Как мы работаем</a></li>
-                        <li><a href="" class="">Отзывы клиентов</a></li>
-                        <li><a href="" class="">Оставить заявку</a></li>
-                       </ul>
+                    <nav class="main-nav">
+                       <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item" href="#about" class="">О компании</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#portfolio" class="">Портфолио</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#team" class="">Команда</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#our-work" class="">Как мы работаем</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#reviews" class="">Отзывы клиентов</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="feedback" class="">Оставить заявку</a>
+                        </li>
+                       </ul> 
                     </nav>
                     <div class="phone">
-                        <a href="+7 (981) 857-46-24">+7 (981) 857-46-24</a>
+                        <a class="phone__link" href="+7 (981) 857-46-24">+7 (981) 857-46-24</a>
                     </div>
             </div>
             <section class="promo">
-                <div>
-                    <div>
-                        <h1>
+                <h1 class="visually-hidden">Студия дизайна интерьеров Scandi</h1>
+                <div class="container container--small">
+                    <div class="promo__content">
+                        <h2 class="section-title section-title--promo">
                             Поможем сделать вашу квартиру уютнее
-                        </h1>
+                        </h2>
                         <p>
                             Подбираем текстиль, мебель и аксессуары
                             под ваш интерьер, находим магазины
@@ -51,7 +66,7 @@
     <main>
         <section class="about">
             <div>
-                <h2>
+                <h2 class="section-title">
                     О нас
                 </h2>
                 <img src="./img/about_us.jpg" alt="О нас">
