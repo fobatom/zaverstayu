@@ -365,10 +365,6 @@
          url('../fonts/montserrat-v25-cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-
-  element.style {
-}
-
 .promo__text {
     margin: 0 0 21px;
 }
